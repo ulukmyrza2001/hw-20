@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+:root {
+    --primary-color: #fed700;
+    --hr-color: #c4c4c4;
+    --font-family: "Exo", sans-serif;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html.dark {
+    --background: url(./assets/World\ Map\ \(1\).svg);
+    --color : rgb(173, 190, 202);
+    --button-background-color:rgba(36, 29, 27, 0.914);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    --color-h1:rgb(39, 70, 97);
+
+    --background-vidjet:rgba(36, 29, 27, 0.8);
+
+    --input-background:rgba(36, 29, 27, 0.8);
+    --inp-focus-form-box-shadow:0px 0px 8px rgb(173, 190, 202);
+
+    --inp-edit-box-shadow: 0 0 3px saddlebrown;
+    --inp-focus-edit-box-shadow: 0 0 3px rgb(81, 168, 230);
+    --btn-edit-hover-b-shadow: 0 0 5px saddlebrown;
+
+    --btn-list-del-hover-b-shodow:0px 0px 4px salmon;
+
+    --btn-list-edit-hover-backround:rgba(96, 29, 27, 0.514);
+  }
+  html.light {
+    --background:url(./assets/World\ Map\ \(2\).svg);
+    --color :white;
+    --button-background-color:rgb(39, 70, 97);
+     
+    --color-h1:rgb(39, 70, 97);
+
+    --background-vidjet:rgb(153, 174, 192);
+
+    --input-background:rgb(39, 70, 97);
+    --inp-focus-form-box-shadow:0px 0px 15px rgb(28, 7, 87);
+
+    --inp-edit-box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    --inp-focus-edit-box-shadow: 0 0 3px rgb(81, 168, 230);
+    --btn-edit-hover-b-shadow: 0 0 15px;
+
+    --btn-list-del-hover-b-shodow: 6px 7px 20px rgba(0,0,0,0.5);
+
+    --btn-list-edit-hover-backround:rgba(34, 4, 3, 0.514);
+  }
+  
+  body{
+    color: var(--color);
+    background:var(--background);
+    transition: background 200ms linear;
+    font-family: var(--font-family);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  button {
+    font-family: var(--font-family);
+  }
+  
+  ::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.2rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+  } 
